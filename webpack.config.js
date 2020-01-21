@@ -10,7 +10,7 @@ module.exports = {
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
-    },
+    }
   },
   module: {
     rules: [
@@ -22,6 +22,12 @@ module.exports = {
       {
         test: /\.vue$/,
         loader: 'vue-loader',
+      },
+      {
+        // 拡張子 .ts の場合
+        test: /\.ts$/,
+        // TypeScript をコンパイルする
+        use: "ts-loader"
       },
       {
         test: /\.(scss|css)$/,

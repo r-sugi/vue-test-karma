@@ -45,6 +45,8 @@
     "sass-loader": "^8.0.0",
     "sinon": "^7.5.0",
     "style-loader": "^1.0.2",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.5",
     "vue-template-compiler": "^2.6.10"
   },
   "gitHooks": {
